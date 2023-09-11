@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "declaration": true,
+    "esModuleInterop": true,
+    "target": "ESNext",
+    "strict": true,
+    "outDir": "dist/"
+  },
+  "include": ["src/"],
+  "exclude": ["tests/", "dist/", "examples/"],
+  "prettier": {
+    "printWidth": 80,
+    "tabWidth": 2,
+    "useTabs": false,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "all",
+    "arrowParens": "always"
+  }
+}

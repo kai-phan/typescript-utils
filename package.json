@@ -1,0 +1,23 @@
+{
+  "name": "kai-ts-utils",
+  "version": "1.0.0",
+  "description": "A simple set of typescript utilities like ts-toolbelt",
+  "main": "index.ts",
+  "author": "kai",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "prettier": "^3.0.3",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kai-phan/typescript-utils.git"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts-resolve --minify --clean --legacy-output --sourcemap --watch",
+    "format": "prettier --write .",
+    "test": "jest --watch"
+  }
+}
