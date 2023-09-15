@@ -1,12 +1,18 @@
 {
   "name": "kai-ts-utils",
   "version": "1.0.0",
-  "description": "A simple set of typescript utilities like ts-toolbelt",
+  "description": "A simple set of typescript utilities like ts-toolbelt for learning purposes",
   "main": "index.ts",
   "author": "kai",
   "license": "MIT",
   "private": false,
   "devDependencies": {
+    "@types/react": "^18.2.21",
+    "@typescript-eslint/eslint-plugin": "^6.6.0",
+    "@typescript-eslint/parser": "^6.6.0",
+    "eslint": "^8.49.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
     "prettier": "^3.0.3",
     "tsup": "^7.2.0",
     "typescript": "^5.2.2"
@@ -18,6 +24,15 @@
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts-resolve --minify --clean --legacy-output --sourcemap --watch",
     "format": "prettier --write .",
-    "test": "jest --watch"
+    "lint": "eslint --ext .ts,.tsx src"
+  },
+  "prettier": {
+    "printWidth": 80,
+    "tabWidth": 2,
+    "useTabs": false,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "all",
+    "arrowParens": "always"
   }
 }
