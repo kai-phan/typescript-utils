@@ -6,4 +6,5 @@ export namespace Arrays {
 
 type A = IsTypeEqual<12, 213>;
 
+// @ts-expect-error
 typeAssert<IsTypeEqual<A, false>>();
